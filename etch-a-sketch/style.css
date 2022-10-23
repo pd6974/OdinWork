@@ -1,7 +1,26 @@
 .gridDiv {
-    background-color: blue;
-    border-color: black;
-    border-width: 3px;
-    height: 100px;
-    width: 100px;
+    background-color: forestgreen;
+    border-color: gray;
+    border-style:groove;
+    display: flex;
+    height: 45px;
+    width: 45px;
+    margin: 2px;
+}
+
+.gridDiv:hover {
+    background-color: white;
+    transform: 2s;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    column-gap: 2px;
+    row-gap: 2px;
+    justify-items: center;
+    justify-content: start;
+    width: 950px;
+    background-color: black;
 }
