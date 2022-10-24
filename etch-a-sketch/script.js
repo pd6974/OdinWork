@@ -10,3 +10,16 @@ function makeGrid() {
             gridDiv.classList.add('gridDiv');
     }
 }
+
+//create nodelist of divs in the grid
+const divs = document.querySelectorAll('gridDiv');
+
+//add hover event listener to each div
+divs.forEach((div) => {
+    div.addEventListener('mouseover', () => {
+        console.log("added");
+    });
+
+})
+
+
